@@ -143,14 +143,14 @@ async def _cleanup(
             f"Successfully removed {deleted} messages.",
             reference=ctx.message.to_reference(fail_if_not_exists=False),
             allowed_mentions=discord.AllowedMentions(replied_user=False),
-            delete_after=10,
+            delete_after=2,
         )
     else:
         await ctx.send(
             to_send,
             reference=ctx.message.to_reference(fail_if_not_exists=False),
             allowed_mentions=discord.AllowedMentions(replied_user=False),
-            delete_after=10,
+            delete_after=2,
         )
 
     await ctx.message.delete(delay=10)
