@@ -153,7 +153,7 @@ async def _cleanup(
             delete_after=1,
         )
 
-    await ctx.message.delete()
+    await ctx.message.delete(delay=1)
 
 
 # https://github.com/Cog-Creators/Red-DiscordBot/blob/V3/develop/redbot/cogs/cleanup/cleanup.py#L163
