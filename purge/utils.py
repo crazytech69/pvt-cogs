@@ -150,10 +150,10 @@ async def _cleanup(
             to_send,
             reference=ctx.message.to_reference(fail_if_not_exists=False),
             allowed_mentions=discord.AllowedMentions(replied_user=False),
-            delete_after=2,
+            delete_after=1,
         )
 
-    await ctx.message.delete(delay=1)
+    await ctx.message.delete()
 
 
 # https://github.com/Cog-Creators/Red-DiscordBot/blob/V3/develop/redbot/cogs/cleanup/cleanup.py#L163
